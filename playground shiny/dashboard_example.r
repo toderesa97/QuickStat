@@ -29,10 +29,8 @@ dashboardPage(
 
 ui <- dashboardPage(
   dashboardHeader(title = "Dynamic sidebar"),
-  dashboardSidebar(
-    sidebarMenuOutput("menu")
-  ),
-  dashboardBody()
+  sidebar,
+  body
 )
 
 server <- function(input, output) {
